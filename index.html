@@ -135,6 +135,16 @@
 
 
 
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?9e9cf808ac0bacac38d53d4b08c7e8f7";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
 
 
 
@@ -287,7 +297,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-check-o"></i>
             </span>
-            <time title="Post modified" itemprop="dateModified" datetime="2016-11-13T16:05:33+08:00">
+            <time title="Post modified" itemprop="dateModified" datetime="2016-11-13T21:51:56+08:00">
               2016-11-13
             </time>
             
@@ -296,6 +306,13 @@
           
 
           
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/11/13/迈向前端开发第一步/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/13/迈向前端开发第一步/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -321,61 +338,20 @@
       
         
           
-            <blockquote>
-<p><b>前言</b><br>从此篇文章开始，我将跳进前端的大坑中，以此来作为纪念。希望各位路过的大神能够给小弟指点迷津，同时也希望能够和正在学习前端开发的各位伙伴一起并肩前行。</p>
-</blockquote>
-<hr>
-<h2 id="一、前端认知"><a href="#一、前端认知" class="headerlink" title="一、前端认知"></a>一、前端认知</h2><ol>
-<li>前端是做什么的<br>说的高大上一点，前端就是做IT系统工程的，主要负责信息化系统的设计、建设，包括设备、系统、数据库、应用系统的建设。说简单一点，其实就是做网页的。</li>
-<li>开发流程<br>每个公司都有自己的一套开发流程，但基本上大同小异，主要可以分为下面几个步骤。<ol>
-<li>产品需求<br>产品需求都是需要经过市场调查的，然后由产品经理指定需求文档。需求文档制定好了之后就需要开第一次例会，去掉一些不合理的需求。接下来就是开始设计 UI 了。</li>
-<li>项目设计<br>项目设计由视觉设计师设计项目界面以及交互设计师设计交互逻辑。当项目设计完成后，就会有各种PSD文件了。这时候一般就会开第二次例会了。主要是给前后端开发排工期的。</li>
-<li>前后端开发<br> 前端开发包括：HTML5、iOS、Android、Unity-3D 等。后端开发主要是给我们前端提供数据。</li>
-<li>测试<br> 通过测试后就可以上线运营了。</li>
-</ol>
-</li>
-</ol>
-<h2 id="二、前端开发的核心语言"><a href="#二、前端开发的核心语言" class="headerlink" title="二、前端开发的核心语言"></a>二、前端开发的核心语言</h2><ol>
-<li><p>HTML 『结构层』<br>超文本标记语言( hyper text markup language )</p>
-<ol>
-<li>超文本：包括文字、图片、视频、音频等，最重要的一点是可以包含超链接，使各个页面连接起来。</li>
-<li>标记语言：当我们把特定的英文单词放入我们的标记当中，我们的标记具有了新的语义，而由具有特定语义的标记的规范，我们可以称之为标记语言。当我们将英语单词放入标记当中，这时候我们可以称之为“标签”。标签又分为 单标签 &lt;/&gt; 和 双标签 &lt;&gt;&lt;/&gt; 。</li>
-<li><p>基本结构</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;!-- 文档头（类型）声明，代表的是 HTML 5 的标准，文档头声明 不是标签 --&gt;</div><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">	&lt;!-- head --&gt;</div><div class="line">	&lt;!--里面包含绝大部分内容都是不可见的，里面的内容主要用于辅助页面的展示--&gt;</div><div class="line">	&lt;head&gt;</div><div class="line">		&lt;!-- title：	双标签	定义页面标题--&gt;</div><div class="line">		&lt;title&gt;页面标题&lt;/title&gt;</div><div class="line">		&lt;!--meta：单标签，定义页面的元数据，属性：charset，针对搜索引擎和解析格式的属性--&gt;</div><div class="line">		&lt;meta charset=&quot;uft-8&quot; /&gt;</div><div class="line">	&lt;/head&gt;</div><div class="line">	</div><div class="line">	&lt;!--body--&gt;</div><div class="line">	&lt;!--里面包含的绝大部分在页面中都是可见的，主要用于搭建 HTML 结构--&gt;</div><div class="line">	&lt;body&gt;&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
-</li>
-<li><p>检查元素</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1917079-57682974b0d08f16.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-</li>
-</ol>
-</li>
-<li><p>CSS 『表现层』<br>  层叠样式表( Cascading Style Sheets )</p>
-</li>
-<li><p>CSS 的引入方式<br>  CSS 的引入方式有三种，包括内联样式表、内部样式表以及外部样式表。</p>
-<p> <img src="http://upload-images.jianshu.io/upload_images/1917079-931bbbc1038ab172.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<ul>
-<li>内联样式表<br><code>&lt;div style=&quot;width:100px;height:100px;background-color:red;&quot;&gt;&lt;/div&gt;</code></li>
-<li><p>内部样式表</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;haed&gt;</div><div class="line">	&lt;title&gt;&lt;/title&gt;</div><div class="line">	&lt;meta charset=&quot;utf-8&quot;/&gt;</div><div class="line">	&lt;style&gt;</div><div class="line">		div&#123;</div><div class="line">			width:100px;</div><div class="line">			height:100px;</div><div class="line">			background-color:red;</div><div class="line">		&#125;</div><div class="line">	&lt;/style&gt;</div><div class="line">&lt;/head&gt;</div></pre></td></tr></table></figure>
-</li>
-<li><p>外部样式表<br><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/style.css&quot;&gt;</code></p>
-</li>
-</ul>
-</li>
-<li><p>引入方式的优先级<br>内联 &gt; 内部 和 外部，内部和外部谁生效。如果选择器优先级相同，谁后引入谁生效；如果选择器优先级不同，选择器优先级高的生效。</p>
-</li>
-<li><p>CSS 选择器<br>选择器用在内部样式表或外部样式表中。</p>
-</li>
-</ol>
-<p><img src="http://upload-images.jianshu.io/upload_images/1917079-2256052fb1a885dd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<ol>
-<li>JavaScript 『行为层』<br>JavaScript 负责页面的交互，一开始不会用到 JS 编程，所以我们只需要把 HTML 和 CSS 的基础知识学习牢固就可以了！</li>
-</ol>
-<p>##三、小练习<br>   <img src="http://upload-images.jianshu.io/upload_images/1917079-a974b9da8629216a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>这篇文章就到这里，小练习的代码已上传到我的<a href="https://github.com/AD-feiben/Exercise" target="_blank" rel="external">GitHub</a>上。</p>
-<blockquote>
-<p>由于本人水平有限，如有错误，欢迎大家指正。如果你在操作过程中发现一些没有讲到的错误或者问题，欢迎在评论留言，一起探讨，共同学习进步！</p>
-</blockquote>
-
           
+前言从此篇文章开始，我将跳进前端的大坑中，以此来作为纪念。希望各位路过的大神能够给小弟指点迷津，同时也希望能够和正在学习前端开发的各位伙伴一起并肩前行。
+
+
+一、前端认知
+前端是做什么的说的高大上一点，前端就是做IT系统工程的，主要负责信息化系统的设计、建设，包括设备、系统、数据库、应用系统的建设
+          ...
+          <!--noindex-->
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/11/13/迈向前端开发第一步/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -465,6 +441,17 @@
         
 
         <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/AD-feiben" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
           
         </div>
 
@@ -587,14 +574,33 @@
 
   
 
+  
+    
+  
 
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"iissnan-notes"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
 
+  
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
   
 
 
 
 
-	
 
 
 
@@ -610,6 +616,8 @@
 
   
 
+<!--   
+   -->
 
 </body>
 </html>
